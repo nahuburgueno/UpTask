@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.reestablecer {
+    margin-top: 5rem;
+
+    .UpTask {
+        @include m.textoDegradado(v.$azul);
+    }
+    input[type='submit'] {
+        @include m.boton(v.$azul, v.$blanco);
+        margin-left: auto;
+    }
+    
+    .acciones {
+         a {
+            color: v.$azul;
+         }
+    }
+}
